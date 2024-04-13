@@ -1,0 +1,274 @@
+@font-face{
+    font-family: head;
+    src:url(./Heading-Now-Variable.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#pages{
+    height: 100vh;
+    /* position: absolute; */
+    width: 100%;
+    /* background-image: url(noise.png); */
+    display: flex;
+    /* background-color: #B692A1; */
+}
+
+#page1{
+    height: 100vh;
+    width: 50%;
+max-height: 100vh;
+    background-color: black;
+    /* background-image: url(noise.png); */
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+/* z-index: 2; */
+    /* mix-blend-mode:darken; */
+}
+
+/* #noise{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url('noise.png');
+    background-size: auto;
+    background-repeat: repeat;
+    mix-blend-mode: overlay;
+    opacity: 1;
+} */
+
+#page1 h1{
+    font-size: 980%;
+    /* position: absolute; */
+    color: white;
+    text-transform: uppercase;
+    font-family: head;    
+    /* text ek hi line me rehata hai isse  */
+    /* white-space: nowrap; */
+    font-stretch: 260%;
+    font-weight: 999;
+    
+}
+
+#navbar{
+    
+    width: 90%;
+    color: white;
+    margin: 10px;
+    position: absolute;
+    top: 3%;
+}
+#navbar nav{
+display: flex;
+justify-content: space-evenly;
+/* align-items: center; */
+}
+
+#line{
+    height: 73%;
+    bottom: -28.5%;
+    display: flex;
+    
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+#bottom-navbar{
+    
+    width: 100%;
+    color: rgba(255, 255, 255, 0.733);
+    margin: 10px;
+    position: absolute;
+    
+    bottom: 3%;
+}
+#bottom-navbar nav{
+display: flex;
+font-weight: 50;
+font-size: small;
+justify-content: space-evenly;
+/* align-items: center; */
+}
+
+
+
+
+
+
+
+
+#page1-2{
+    width: 36.5%;
+    /* width: 572px; */
+    height: 100vh;
+    max-height: 100vh;
+    background-color: #B692A1;
+    /* position: relative; */
+    /* position:relative; */
+    /* display: flex; */
+    overflow: hidden;
+    translate: none;
+    transform-origin:0% 50%;
+    rotate: none;
+}
+
+#page1-2 img{
+    /* width: 400; */
+
+    height: 210px;
+    display: flex;
+    top: 35%;
+/* right: 1%; */
+/* display:grid; */
+    object-fit: cover;
+    /* position:absolute; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+#page1-3{
+    height: 100vh;
+    width: 9.5%;
+    max-height: 100vh;
+    background-color: #BFCCD8;
+    /* z-index: 2; */
+    /* overflow: hidden; */
+    overflow: hidden;
+    translate: none;
+    rotate: none;
+    transform-origin:-50% 50%;
+}
+
+#page1-4{
+    height: 100vh;
+    width: 5.4%;
+    /* max-height: 100vh; */
+    background-color: #798E7B;
+    /* overflow: hidden; */
+    /* translate: none; */
+    /* rotate: none; */
+    transform-origin:-142% 50%;
+    /* transform-origin: 0% 50%; */
+    max-height: 200vh;
+    /* transform: scale(12.56, 1.60); */
+}
+/* #page1-4 img{
+    height: 300px;
+    width: 50px;
+    object-fit: cover;
+} */
+
+/* #page1-5{
+    top: -100;
+    height: 100vh;
+    width: 0.001%;
+    background-color: #ff0000;
+  
+} */
+
+.projects{
+    height: 10vh;
+    width: 100%;
+    background: violet;
+    /* left: 0; */
+    display: flex;
+    position: absolute;
+    /* top: 90%; */
+    /* bottom: 100vh; */
+}
+.projects h1{
+    font-size: 20vw;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#section3{
+    height: 100vh;
+    width: 0.2%;
+    background: rgb(57, 52, 61);
+    bottom: -300%;
+    right: 0;
+    /* display: flex; */
+    position: absolute;
+    
+}
+
+#section3 h1{
+    font-size: 15vw;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    text-transform: capitalize;
+    white-space: nowrap;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#section4{
+    height: 100vh;
+    width: 20%;
+    background: salmon;
+    bottom: -400%;
+    right: 0;
+    display: flex;
+    position: absolute;
+    
+}
+
+
+
+
+
+.logoim{
+    top: 800px;
+    height: 300px;
+    width: 50px;
+}
+
+/* this is for page 2 */
+#section2{
+    top: 0;
+    height: 19vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.795);
+    /* position:relative; */
+    /* bottom: 30; */
+    right: 0;
+    /* overflow: hidden; */
+    z-index: 4;
+
+}
+
+
+
+
+
+
+
+#page1 .imag img{
+    height: 100%;
+
+    animation: skelet 2.9s ease infinite;
+}
+
+@keyframes skelet {
+	
+    0%{
+        transform: translateY(0%);
+        opacity: 0;
+    }
+    5%{
+        transform: translateY(30%);
+        opacity: 100%;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 0.5;
+    }
+}
